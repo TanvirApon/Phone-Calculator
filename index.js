@@ -1,5 +1,3 @@
-
-console.log("Js file has been added");
 var num = "";
 var result = 0 ;
 var  operator = "+";
@@ -14,11 +12,14 @@ function getValue(inputValue){
             document.getElementById("display").value = parseFloat(result);  
         } 
         else {
-            num += inputValue;
-            document.getElementById("display").value = num; 
+            if (inputValue === "0" && num === "") {
+                num = "0";
+            } 
+            else if (inputValue !== "0" || num !== "0") {
+                num += inputValue;
+            }
+            document.getElementById("display").value = num;  
         }
-    console.log("Result: " + result);
-    // document.getElementById("display").value += inputValue;   
 }
 
 function calculation(){
