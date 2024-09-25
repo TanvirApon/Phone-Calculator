@@ -14,7 +14,10 @@ function getValue(inputValue){
         else {
             if (inputValue === "0" && num === "") {
                 num = "0";
-            } 
+            }
+	    else if(num === "0"){
+		num = inputValue;
+	    } 
             else if (inputValue !== "0" || num !== "0") {
                 num += inputValue;
             }
