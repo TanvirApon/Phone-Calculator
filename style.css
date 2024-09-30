@@ -26,8 +26,8 @@
 .zero-button{
     margin: 10px 16px 0px 21px;
     width: 186px;
-    border-radius: 24%;
-    height: 68px;
+    border-radius: 47px 45px 47px 45px;
+    height: 85px;
     text-align: left;
     padding: 0px 19px;
     font-size: 30px;

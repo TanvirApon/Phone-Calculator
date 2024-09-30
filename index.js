@@ -9,15 +9,15 @@ function getValue(inputValue){
             operator = inputValue; 
             console.log("get Value function operator: " + operator);
             num = ""; 
-            document.getElementById("display").value = parseFloat(result);  
+            document.getElementById("display").value = parseFloat(result); 
         } 
         else {
             if (inputValue === "0" && num === "") {
                 num = "0";
             }
-	    else if(num === "0"){
-		num = inputValue;
-	    } 
+	        else if(num === "0"){
+		      num = inputValue;
+	        } 
             else if (inputValue !== "0" || num !== "0") {
                 num += inputValue;
             }
@@ -47,7 +47,8 @@ function calculation(){
 function calculateFinal(){
     calculation();
     document.getElementById("display").value = result; 
-    num = "";  
+    num = "";
+    operator = "+";
 }
 
 function clearAll(){
@@ -55,7 +56,6 @@ function clearAll(){
     num = "";
     result = 0;
     operator = "+";
-    console.clear();  
 }
 
 function getFloat(){
